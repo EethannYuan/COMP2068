@@ -1,0 +1,166 @@
+/* Starter style.css for CSS Lab Work
+   Each section below corresponds to one or more lab questions.
+   Replace TODO comments with your final values.
+*/
+
+/* Q#: Reset margins for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Q1: Make HTML5 semantic elements block for older browsers */
+header, nav, main, footer, section, article, aside {
+  display: block;
+}
+
+/* Q2: Body styling */
+body {
+  font-family: "Helvetica Neue", Arial, "Segoe UI", sans-serif; /* at least 3 sans-serif options */
+  color: #222; /* TODO: choose final text color */
+  /* TODO: replace the background image with the one you keep inside assets/images */
+  background-image: url('../assets/images/dark-woodx.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+/* Q3: .container */
+.container {
+  width: 950px; /* suggested */
+  max-width: 100%;
+  margin: 5px auto; /* centers the container horizontally and 5px vertical margin */
+  background: rgba(255,255,255,0.9); /* temporary background; change to your theme */
+  padding: 10px;
+}
+
+/* Q4: .content */
+.content {
+  line-height: 1.4em;
+  padding: 10px;
+}
+
+/* Q5: header, nav, footer shared style */
+header, nav, footer {
+  background: #0b5; /* TODO: pick dark/light colors */
+  color: #fff;
+  padding: 10px;
+}
+
+/* Q6: ul inside nav */
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Q7: li in nav (display horizontally and uppercase) */
+nav li {
+  margin-right: 40px; /* as requested */
+}
+nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Q8: link pseudo-classes for nav links */
+nav li a:link { color: #fff; }
+nav li a:visited { color: #eee; }
+nav li a:hover { color: #ff0; }
+nav li a:active { color: #f90; }
+
+/* Q9: all anchors */
+a { color: #0066cc; text-decoration: none; }
+
+/* Q10: headings */
+h1,h2,h3 {
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+/* Q11: .img-centre */
+.img-centre {
+  display: block;
+  margin: 5px auto;
+  padding: 2px;
+}
+
+/* Q12: audio and video center */
+audio, video {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Q13: table */
+table {
+  width: 800px;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+/* Q14: td and th */
+td, th {
+  border: 1px solid #999;
+  padding: 2px 5px;
+}
+
+/* Q15: th and td in moot (if any) */
+th { text-transform: uppercase; background: #ddd; color: #000; }
+
+/* Q16: dt */
+dt { font-weight: bold; }
+
+/* Q17: footer */
+footer {
+  font-size: 80%;
+  text-align: center;
+  padding: 1px 0;
+}
+
+/* Q18: iframe */
+iframe.map {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Q19: fieldset */
+fieldset {
+  width: 500px;
+  margin: 20px auto;
+  border: 1px solid #666;
+  background: rgba(240,240,240,0.8);
+}
+
+/* Q20: legend */
+legend {
+  font-style: italic;
+  padding: 0 5px;
+  margin: 0 10px;
+  border-radius: 6px;
+  background: #ccc;
+}
+
+/* Q21 & Q22: input[type=submit] and hover */
+input[type="submit"] {
+  border: 1px solid #333;
+  padding: 5px;
+  background: #0a8;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background: #06a;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Small responsive tweak */
+@media (max-width: 960px) {
+  .container { width: 95%; }
+  nav > ul { flex-wrap: wrap; gap: 10px; }
+  table { width: 100%; }
+}
